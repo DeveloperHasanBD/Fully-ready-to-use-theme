@@ -1,0 +1,38 @@
+/*
+Theme Name: Urban
+Theme URI: https://www.red-apple.it/
+Author: Red Apple International
+Author URI: https://www.red-apple.it/
+GitHub Theme URI: https://www.red-apple.it/
+Description: The renowned WordPress starter theme framework that combined Underscores and Bootstrap. Trusted by more than 100,000 developers for building handcrafted, custom WordPress sites.
+Version: 1.0.1
+Requires at least: 5.0
+Tested up to: 5.8
+Requires PHP: 5.2
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: urban
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, theme-options, translation-ready
+
+urban WordPress Theme, (C) 2021 Howard Development & Consulting, LLC
+urban is distributed under the terms of the GNU GPL.
+
+Resource Licenses:
+urban is based on Underscores https://underscores.me/, (C) Automattic, Inc.
+Font Awesome: https://fontawesome.com/v4.7/license/ (Font: SIL OFL 1.1, (S)CSS: MIT)
+Bootstrap: https://getbootstrap.com | https://github.com/twbs/bootstrap/blob/master/LICENSE (MIT)
+WP Bootstrap Navwalker by Edward McIntyre & William Patton: https://github.com/twittem/wp-bootstrap-navwalker (GNU GPLv3)
+*/
+
+/*
+Do not modify the parent urban theme. Instead, download a copy of the urban Child starter theme and do all your development within the child theme.
+Full developer documentation: https://docs.urban.com
+*/
+
+.octgn_comtainer_width .vc_row {
+    margin: 0;
+}
+
+.octgn_comtainer_width .vc_column_container>.vc_column-inner {
+    padding: 0;
+}
