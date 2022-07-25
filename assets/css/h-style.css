@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url(fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url(fonts/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src: url(fonts/Ubuntu-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url(fonts/Ubuntu-Regular.ttf)
+}
+
+h1, h2, h3, h4, h5, h6, p, li, ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* start menu design  */
+.hm_apt_header_menu_section {
+    background: #921b11;
+}
+
+.hm_menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.hm_menu ul li a {
+    display: block;
+    font-family: 'Ubuntu-Bold';
+    padding: 7px 15px;
+    color: #fff;
+}
+
+.hm_menu ul {
+    text-align: right;
+}
+
+.hm_menu ul li>ul {
+    position: absolute;
+    top: 300%;
+    right: 0;
+    width: 200px;
+    background: #921b11;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+
+}
+
+.hm_menu ul li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.hm_menu ul li ul li {
+    display: block;
+}
+
+.hm_menu_pos {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+li.menu-item-has-children {
+    position: absolute;
+}
+
+li.menu-item-has-children:after {
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 14px;
+    right: 0px;
+    height: 7px;
+    width: 1px;
+    background: white;
+    transform: rotate(45deg);
+}
+
+li.menu-item-has-children:before {
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 14px;
+    right: 4px;
+    height: 7px;
+    width: 1px;
+    background: white;
+    transform: rotate(-45deg);
+}
+
+.mobile_menu {
+    display: none;
+}
+
+.hm_menu>ul li:last-child a {
+    position: relative;
+}
+
+.hm_menu>ul li:last-child a:after {
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    left: 0px;
+    top: 6px;
+    height: 25px;
+    width: 1px;
+    background: #fff;
+}
+
+.hm_menu>ul li ul li:last-child a:after {
+    background: none;
+}
+
+.container-fluid {
+    width: 95%;
+}
+
+@media all and (max-width: 1400px) {
+    .hm_menu ul li a {
+        padding: 7px 8px;
+    }
+
+    li.menu-item-has-children:after {
+        right: -9px;
+    }
+
+    li.menu-item-has-children:before {
+        right: -4px;
+    }
+
+}
+
+@media all and (max-width: 1200px) {
+    li.menu-item-has-children:before, li.menu-item-has-children:after {
+        display: none;
+    }
+
+    .slicknav_nav ul li a:focus {
+        background: #850f05 !important;
+        color: #fff !important;
+    }
+
+    li.menu-item-has-children {
+        position: inherit;
+    }
+
+    .mobile_menu {
+        display: block;
+    }
+
+    .hm_menu {
+        display: none;
+    }
+
+    .mobile_menu {
+        color: #fff;
+    }
+
+    .slicknav_btn {
+        position: absolute;
+        top: -45px;
+        right: 0;
+        background: #921b11;
+    }
+
+    .mobile_menu {
+        position: relative;
+    }
+
+    .slicknav_menu {
+        background: #921b11;
+    }
+
+    a.slicknav_item.slicknav_row {
+        background: #850f05 !important;
+        border-radius: 0px !important;
+    }
+
+    li.menu-item-has-children.slicknav_parent.slicknav_open {
+        background: #7e0a00;
+    }
+
+    .slicknav_nav ul {
+        margin: 0;
+    }
+}
+
+/* end menu design  */
+
