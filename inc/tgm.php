@@ -68,6 +68,11 @@ function customtd_register_required_plugins()
 			'required' => true,
 		),
 		array(
+			'name' => 'Ivory Search',
+			'slug' => 'add-search-to-menu',
+			'required' => false,
+		),
+		array(
 			'name' => 'WP Bakery',
 			'slug' => 'wp_bakery',
 			'source' => get_theme_file_path() . '/plugins/js_composer.zip',
@@ -76,17 +81,17 @@ function customtd_register_required_plugins()
 		array(
 			'name' => 'Kirki',
 			'slug' => 'kirki',
-			'required' => true,
+			'required' => false,
 		),
 		array(
 			'name' => 'Social share',
 			'slug' => 'sassy-social-share',
-			'required' => true,
+			'required' => false,
 		),
 		array(
 			'name' => 'Breadcrumb',
 			'slug' => 'breadcrumb-navxt',
-			'required' => true,
+			'required' => false,
 		),
 		array(
 			'name' => 'ACF Pro',
