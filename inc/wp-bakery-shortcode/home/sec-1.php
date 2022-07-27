@@ -27,7 +27,6 @@ function apt_hm_sec_1_sliders_backend()
                     'params' => array(
                         array(
                             "type" => "attach_image",
-                            "holder" => "img",
                             "class" => "",
                             "heading" => __("Image", "urban"),
                             "param_name" => "apt_hm_sec_1_slider_img",
