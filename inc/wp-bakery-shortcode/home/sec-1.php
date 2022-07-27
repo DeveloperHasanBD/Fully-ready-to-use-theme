@@ -51,7 +51,7 @@ function apt_hm_sec_1_sliders_view($atts)
 
     // $heading = $atts['box_repeater_heading'];
     $items = vc_param_group_parse_atts($atts['apt_hm_sec_1_sliders_items']);
-    $mtshm_sec_2_title = rawurldecode(base64_decode($atts['mtshm_sec_2_title']));
+    //$mtshm_sec_2_title = rawurldecode(base64_decode($atts['mtshm_sec_2_title']));
 
 
 ?>
