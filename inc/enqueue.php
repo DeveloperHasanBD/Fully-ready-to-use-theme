@@ -45,6 +45,7 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 		wp_enqueue_script( 'enq-min', get_template_directory_uri() . '/assets/js/all.min.js', array(), $js_version, true );
 		wp_enqueue_script( 'enq-slicknav', get_template_directory_uri() . '/assets/js/jquery.slicknav.js', array(), $js_version, true );
 		wp_enqueue_script( 'enq-validate', get_template_directory_uri() . '/assets/js/jquery.validate.min.js', array(), $js_version, true );
+		wp_enqueue_script( 'enq-imagesloaded', get_template_directory_uri() . '/assets/js/imagesloaded.pkgd.min.js', array(), $js_version, true );
 		wp_enqueue_script( 'enq-isotope', get_template_directory_uri() . '/assets/js/isotope.pkgd.js', array(), $js_version, true );
 
 		wp_enqueue_script( 'enq-r-main', get_template_directory_uri() . '/assets/js/r-main.js', array(), $js_version, true );
